@@ -1,0 +1,18 @@
+'x'.repeat(3) // "xxx"
+'hello'.repeat(2) // "hellohello"
+'na'.repeat(0) // ""
+
+'na'.repeat(2.9) // "nana"
+
+'na'.repeat(Infinity)
+// RangeError
+'na'.repeat(-1)
+// RangeError
+
+'na'.repeat(-0.9) // ""
+
+'na'.repeat(NaN) // ""
+
+'na'.repeat('na') // ""
+'na'.repeat('3') // "nanana"
+
