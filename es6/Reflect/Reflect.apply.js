@@ -8,4 +8,4 @@ const type = Object.prototype.toString.call(youngest);
 // 新写法
 const youngest = Reflect.apply(Math.min, Math, ages);
 const oldest = Reflect.apply(Math.max, Math, ages);
-const type = Reflect.apply(Object.prototype.toString, youngest, []);
+const type = Reflect.apply(Object.prototype.toString, youngest, []);   
