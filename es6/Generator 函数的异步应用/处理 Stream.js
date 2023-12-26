@@ -20,4 +20,4 @@ co(function*() {
     valjeanCount += (res.toString().match(/valjean/ig) || []).length;
   }
   console.log('count:', valjeanCount); // count: 1120
-});
+});++0   
