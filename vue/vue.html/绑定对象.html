@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div :class="{ active: isActive }"></div>
+  <div
+  class="static"
+  :class="{ active: isActive, 'text-danger': hasError }"
+></div>
+
+<div class="static active"></div>
+
+<div :class="classObject"></div>
+
+<div class="active"></div>
+
+<div :class="classObject"></div>
+
+</body>
+</html>

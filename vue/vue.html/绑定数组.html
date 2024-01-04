@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div :class="[activeClass, errorClass]"></div>
+
+  <div class="active text-danger"></div>
+
+  <div :class="[isActive ? activeClass : '', errorClass]"></div>
+
+  <div :class="[{ active: isActive }, errorClass]"></div>
+
+
+  
+</body>
+</html>

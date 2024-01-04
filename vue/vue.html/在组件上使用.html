@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 子组件模板 -->
+<p class="foo bar">Hi!</p>
+
+<!-- 在使用组件时 -->
+<MyComponent class="baz boo" />
+
+<p class="foo bar baz boo">Hi!</p>
+
+<MyComponent :class="{ active: isActive }" />
+
+<p class="foo bar active">Hi!</p>
+
+<!-- MyComponent 模板使用 $attrs 时 -->
+<p :class="$attrs.class">Hi!</p>
+<span>This is a child component</span>
+
+<MyComponent class="baz" />
+
+<p class="baz">Hi!</p>
+<span>This is a child component</span>
+
+
+</body>
+</html>
