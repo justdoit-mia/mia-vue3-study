@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li v-for="value in myObject">
+      {{ value }}
+    </li>
+  </ul>
+
+  <li v-for="(value, key) in myObject">
+    {{ key }}: {{ value }}
+  </li>
+
+  <li v-for="(value, key, index) in myObject">
+    {{ index }}. {{ key }}: {{ value }}
+  </li>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div v-for="item in items" :key="item.id">
+    <!-- 内容 -->
+  </div>
+
+  <template v-for="todo in todos" :key="todo.name">
+    <li>{{ todo.name }}</li>
+  </template>
+</body>
+</html>
