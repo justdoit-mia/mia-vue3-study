@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Message is: {{ message }}</p>
+<input v-model="message" placeholder="edit me" />
+
+<span>Multiline message is:</span>
+<p style="white-space: pre-line;">{{ message }}</p>
+<textarea v-model="message" placeholder="add multiple lines"></textarea>
+
+<!-- 错误 -->
+<textarea>{{ text }}</textarea>
+
+<!-- 正确 -->
+<textarea v-model="text"></textarea>
+</body>
+</html>

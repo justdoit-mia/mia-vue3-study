@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- `picked` 在被选择时是字符串 "a" -->
+<input type="radio" v-model="picked" value="a" />
+
+<!-- `toggle` 只会为 true 或 false -->
+<input type="checkbox" v-model="toggle" />
+
+<!-- `selected` 在第一项被选中时为字符串 "abc" -->
+<select v-model="selected">
+  <option value="abc">ABC</option>
+</select>
+<!-- 复选框 -->
+<input
+  type="checkbox"
+  v-model="toggle"
+  true-value="yes"
+  false-value="no" />
+
+  <input
+  type="checkbox"
+  v-model="toggle"
+  :true-value="dynamicTrueValue"
+  :false-value="dynamicFalseValue" />
+  <!-- 单选按钮 -->
+  <input type="radio" v-model="pick" :value="first" />
+<input type="radio" v-model="pick" :value="second" />
+
+<!-- 选择器选项 -->
+<select v-model="selected">
+  <!-- 内联对象字面量 -->
+  <option :value="{ number: 123 }">123</option>
+</select>
+
+<!-- 修饰符 -->
+<!-- 在 "change" 事件后同步更新而不是 "input" -->
+<input v-model.lazy="msg" />
+
+<input v-model.number="age" />
+
+<input v-model.trim="msg" />
+</body>
+</html>
