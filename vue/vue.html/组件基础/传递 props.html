@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <BlogPost title="My journey with Vue" />
+<BlogPost title="Blogging with Vue" />
+<BlogPost title="Why Vue is so fun" />
+
+<BlogPost
+  v-for="post in posts"
+  :key="post.id"
+  :title="post.title"
+ />
+</body>
+</html>

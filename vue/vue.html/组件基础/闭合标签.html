@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <MyComponent />
+
+  <my-component></my-component>
+
+  <my-component /> <!-- 我们想要在这里关闭标签... -->
+<span>hello</span>
+
+<my-component>
+  <span>hello</span>
+</my-component> <!-- 但浏览器会在这里关闭标签 -->
+
+
+</body>
+</html>
