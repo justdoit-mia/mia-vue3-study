@@ -13,4 +13,3 @@ const classObject = computed(() => ({
   active: isActive.value && !error.value,
   'text-danger': error.value && error.value.type === 'fatal'
 }))
-
